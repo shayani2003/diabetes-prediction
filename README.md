@@ -18,10 +18,10 @@ This project is built using **Flask**, **Python**, **HTML**, **CSS**, and a trai
 ## 🖼️ Screenshots
 
 ### 🧩 Home Page
-![Home Page](/mnt/data/Screenshot%202025-10-08%20200956.png)
+<img src="pics/Screenshot 2025-10-08 200956.png" height="400px">
 
 ### 💡 Prediction Result
-![Prediction Result](/mnt/data/Screenshot%202025-10-08%20201146.png)
+<img src="pics/Screenshot 2025-10-08 201146.png" height="400px">
 
 ---
 
