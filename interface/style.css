@@ -30,11 +30,40 @@ label {
   font-weight: bold;
 }
 
-input {
+input, select {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 8px;
   margin-top: 5px;
+  font-size: 14px;
+}
+
+.gender-pregnancies-row {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.gender-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.pregnancies-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.gender-field label, .pregnancies-field label {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.gender-field select, .pregnancies-field select {
+  margin-top: 0;
 }
 
 button {

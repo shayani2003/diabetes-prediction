@@ -7,8 +7,8 @@ import numpy as np
 import joblib
 
 # Load model + scaler
-scaler = joblib.load("scaler.pkl")
-model = joblib.load("diabetes_model.pkl")
+scaler = joblib.load("../ml/scaler.pkl")
+model = joblib.load("../ml/diabetes_model.pkl")
 
 app = Flask(__name__)
 CORS(app)  # allow requests from frontend
@@ -17,14 +17,14 @@ CORS(app)  # allow requests from frontend
 def predict():
     data = request.get_json()
     features = np.array([[ 
+        float(data["age"]),
         float(data["pregnancies"]),
         float(data["glucose"]),
         float(data["bp"]),
         float(data["skin"]),
         float(data["insulin"]),
         float(data["bmi"]),
-        float(data["pedigree"]),
-        float(data["age"])
+        float(data["pedigree"])
     ]])
     features_scaled = scaler.transform(features)
     prediction = model.predict(features_scaled)[0]
